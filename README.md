@@ -1,28 +1,35 @@
-# DestinationEconomics Data — Cambodia Tourism Intelligence
+# DestinationEconomics Data — Cambodia & Ethiopia Tourism Intelligence
 
 Public, machine-readable data from the **DestinationEconomics** destination intelligence program.
 
 **Live dashboards:**
 - Cambodia Sentiment: https://data.destinationeconomics.com/cambodia-sentiment.html
 - Cambodia Airlift: https://data.destinationeconomics.com/airlines-cambodia.html
+- Ethiopia Sentiment: https://data.destinationeconomics.com/ethiopia/sentiment.html
+- Ethiopia Airlift: https://data.destinationeconomics.com/ethiopia/airlift.html
 
 ## What this is
 
-A weekly **Cambodia Tourism Sentiment Index** tracking traveler sentiment across safety, value, temples/culture, service, visa friction, and food & culinary. Scores run 1–10 (1–4 negative, 5–7 mixed, 8–10 positive). Raw signals are collected from news, social media, forums, and reviews, then scored weekly.
+Weekly destination intelligence series, machine-readable for research, citation, and AI-agent consumption:
 
-Plus a weekly **Cambodia Airlift snapshot** — international route counts by airport (Phnom Penh KTI, Siem Reap SAI, Sihanoukville KOS) and operating carriers, tracked from schedule data. Updated weekly.
+- **Cambodia Tourism Sentiment Index** — weekly category scores (safety, value, temples/culture, service, visa friction, food & culinary). Scale 1–10 (1–4 negative, 5–7 mixed, 8–10 positive). Signals from news, social media, forums, and reviews.
+- **Cambodia Airlift** — weekly international route counts by airport (Phnom Penh KTI, Siem Reap SAI, Sihanoukville KOS) + operating carriers, from schedule data.
+- **Ethiopia TSI-8 Sentiment** — weekly TSI-8 category scores (Culture & History, Access, Outdoor, Food, Amenities, Destination Services, Relaxation, Safety), 1–10.
+- **Ethiopia Airlift** — weekly Addis Ababa (ADD) network snapshot: departures, arrivals, unique routes.
 
 ## Files
 
 | File | Contents |
 |---|---|
-| `data/cambodia-sentiment-index.csv` | Weekly category scores, oldest → newest |
-| `data/cambodia-airlift.csv` | Weekly route/carrier counts by airport, oldest → newest |
-| `data/source-markets.csv` | Six key source markets, trend and sentiment direction |
+| `data/cambodia-sentiment-index.csv` | Cambodia weekly sentiment scores, oldest → newest |
+| `data/cambodia-airlift.csv` | Cambodia weekly route/carrier counts by airport |
+| `data/ethiopia-sentiment-tsi8.csv` | Ethiopia weekly TSI-8 category scores |
+| `data/ethiopia-airlift.csv` | Ethiopia weekly ADD network snapshots |
+| `data/source-markets.csv` | Cambodia source markets, trend and sentiment direction |
 
 ## How to cite
 
-DestinationEconomics (2026). *Cambodia Tourism Intelligence — Sentiment & Airlift*. https://data.destinationeconomics.com/cambodia-sentiment.html
+DestinationEconomics (2026). *Cambodia & Ethiopia Tourism Intelligence — Sentiment & Airlift*. https://data.destinationeconomics.com/
 
 ## License
 
